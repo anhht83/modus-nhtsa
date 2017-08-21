@@ -39,8 +39,7 @@ php -S localhost:8080 -t ./public
 Make sure the server port `8080` is available (You can change to other port)
 
 ## API Document
-
-
+http://docs.modusnhtsaapi.apiary.io
 
 ## Example
 You could use [Postman app](https://www.getpostman.com/apps) to run examples
