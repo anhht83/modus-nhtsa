@@ -4,38 +4,41 @@ PHP API ([Lumen](http://lumen.laravel.com/docs) based) allowing clients to view 
  [NHTSA NCAP 5 Star Safety Ratings API](https://one.nhtsa.gov/webapi/Default.aspx?SafetyRatings/API/5)
 
 ## Requirements
-- PHP >= 5.6.4
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
+* PHP >= 5.6.4
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
 
 **Note:** If you get error `(60) SSL certificate : unable to get local issuer certificate`, do the follow steps
- - Download the latest [cacert.pem](https://curl.haxx.se/ca/cacert.pem) and place into your local
- - Add the following line to php.ini
- ```
+
+* Download the latest [cacert.pem](https://curl.haxx.se/ca/cacert.pem) and place into your local
+* Add the following line to php.ini
+```
  curl.cainfo=/path/to/downloaded/cacert.pem
  openssl.cafile=/path/to/downloaded/cacert.pem
  ```
- - Restart server to apply changes
+* Restart server to apply changes
 
 ## Installation
 The system utilizes [Composer](https://getcomposer.org/download/) to manage its dependencies. So, before using the system, make sure you have `Composer` installed on your machine.
-- Clone repository via git 
+
+* Clone repository via git 
 ```
-https://github.com/marcoaraujojunior/nhtsa-api.git
+https://github.com/anhht83/modus-nhtsa.git
 ```
-- Move to `<root>` directory
+* Move to `<root>` directory
 ```
 cd <root>
 ```
-- Download vendors and Install 
+* Download vendors and Install 
 ```
 composer install
 ```
-- Start Server 
+* Start Server 
 ```
 php -S localhost:8080 -t ./public
 ```
+
 Make sure the server port `8080` is available (You can change to other port)
 
 ## API Document
