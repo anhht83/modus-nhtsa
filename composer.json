@@ -36,8 +36,8 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
-      "chmod 777 storage/ -R",
-      "php -r \"copy('.env.example', '.env');\""
+      "php -r \"copy('.env.example', '.env');\"",
+      "chmod 777 storage/ -R"
     ]
   },
   "minimum-stability": "dev",
